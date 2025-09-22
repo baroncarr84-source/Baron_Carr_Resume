@@ -1,0 +1,84 @@
+/*/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background: #eaf7ea; 
+  color: #111;
+  font-family: "Merriweather", Georgia, serif;
+  line-height: 1.55;
+
+}
+
+
+
+h1, h2, h3 {
+  margin: 0 0 .5rem;
+  line-height: 1.25;
+}
+h1 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+h2 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin-top: 1.25rem;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+h3 span {
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+ul {
+  margin: .5rem 0 1rem;
+  padding-left: 1.15rem;
+}
+li {
+  margin: .3rem 0;
+}
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
