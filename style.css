@@ -1,4 +1,4 @@
-/*/*
+/*
 This is a good layout for a mobile-first CSS template.
 Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
 Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
@@ -29,8 +29,27 @@ html, body {
   line-height: 1.55;
 
 }
+.profile-pic {
+  width: 80px;              
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3ba43b;
+  display: block;           
+}
 
 
+
+/* Arrange image + text side by side */
+.header-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space between image and text */
+}
+
+.header-text {
+  flex: 1;
+}
 
 h1, h2, h3 {
   margin: 0 0 .5rem;
@@ -66,19 +85,18 @@ li {
   margin: .3rem 0;
 }
 
-
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 *********************************************************************/
-@media(min-width: 681px) {
-    /* Any adjustments for tablets and larger go here.
-    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-}
+@media(min-width: 729px) {
+  .resume { max-width: 900px; }
+}  
 
 /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
 @media(min-width: 729px) {
-    /* Any adjustments for desktop and larger go here.
-    Note these styles will be applied to anything 729px or larger -- so desktop */
+    
+.resume { max-width: 900px;
+
 }
